@@ -53,7 +53,7 @@ install gnome-extensions
 
 # Terminal
 install fonts-powerline
-pip install powerline-shell
+pip3 install powerline-shell
 
 # Todo
 # Telegram
