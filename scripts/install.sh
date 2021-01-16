@@ -55,9 +55,17 @@ install gnome-extensions
 install fonts-powerline
 pip3 install powerline-shell
 
-# Todo
-# Telegram
-# KVM
+# KVM / Qemu
+install qemu 
+install qemu-kvm 
+install libvirt-clients 
+install libvirt-daemon-system 
+install bridge-utils 
+install virt-manager 
+install dnsmasq
+install uml-utilities
+install dmg2img 
+install libguestfs-tools
 
 # Run all scripts in programs/
 for f in programs/*.sh; do bash "$f" -H; done
@@ -69,3 +77,10 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 # Get all upgrades
 sudo apt upgrade -y
 sudo apt autoremove -y
+
+# Enable Libvirtd
+sudo systemctl enable libvirtd.service
+sudo systemctl enable virtlogd.service
+
+sudo modprobe kvm
+sudo reboot
