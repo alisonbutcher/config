@@ -33,6 +33,7 @@ install python3
 install python3-venv 
 install python3-pip
 install openjdk-11-jdk
+install vlc
 
 # Image processing
 install gimp
