@@ -40,11 +40,10 @@ install jpegoptim
 install optipng
 
 # Utilities
-install insync
-install insync-nautilus
 install apt-transport-https 
 install curl 
 install gnupg
+install nautilus-admin
 
 # Desktop
 install gnome-tweaks
