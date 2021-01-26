@@ -34,6 +34,7 @@ install python3-venv
 install python3-pip
 install openjdk-11-jdk
 install vlc
+install thunderbird
 
 # Image processing
 install gimp
